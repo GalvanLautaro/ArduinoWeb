@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="shortcut iconb" href="../ArduinoWeb/Imagenes/arduino-logo-1.png">
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a866750c6.js" crossorigin="anonymous"></script>
+    <title>Arduino</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+                <a href="#WIA">¿Qué es un arduino?</a>
+                <a href="#O">Origen</a>
+                <a href="#WIIAA">¿Para qué sirve un Arduino?</a>
+                <button id="bdark">Dark mode</button>
+        </nav>
+    </header>
+    <main class="lightmode">
+        <section style="max-height: max-content; width: 100%;">
+            <div class="Introduction">
+                <p>Arduino es una de las placas más populares del mundo. Su versatilidad y la infinidad de posibilidades que ofrece la convierten en una de las herramientas de programación más completas del mercado. Si no sabes qué es un arduino, estás en el lugar indicado: a continuación te explicaremos qué es y para qué <span id="WIA"></span>sirve un arduino.</p> 
+            </div>
+        </section>
+        <section class="GenericSection">
+            <h3 class="marginH3">¿Qué es Arduino?</h3>
+            <p>Basada en la filosofía del software libre, Arduino es una plataforma de electrónica «open-source»o de código abierto cuyos principios son contar con software y hardware fáciles de usar. Básicamente lo que permite esta herramienta es la generación de infinidad de tipos de microordenadores de una sola placa, que <span id="O"></span>luego pueden tener una amplia variedad de usos según la necesidad de la persona que lo cree. Es decir, una forma sencilla de realizar proyectos interactivos para cualquier persona.</p> 
+        </section>
+        <section class="GenericSection">
+            <h3 class="marginH3">Origen</h3>
+            <p>Esta plataforma se inició en el año 2005 como un proyecto para estudiantes en el Instituto IVREA, en Ivrea (Italia). En ese tiempo, los estudiantes usaban el microcontrolador BASIC Stamp, cuyo coste era de 100 dólares estadounidenses, lo que se consideraba demasiado costoso para ellos. Por aquella época, uno de los fundadores de Arduino, Massimo Banzi, daba clases en Ivrea.<br><br>
+                
+            En la creación de este proyecto contribuyó el estudiante colombiano Hernando Barragán, quien desarrolló la tarjeta electrónica Wiring, el lenguaje de programación y la plataforma de desarrollo.  Una vez concluida dicha plataforma, los investigadores trabajaron para hacerlo más ligero, económico y disponible para la comunidad de software libre (hardware y código abierto). El instituto finalmente cerró sus puertas, así que los investigadores, entre ellos el español David Cuartielles, promovieron la idea. Banzi afirmaría años más tarde que el proyecto nunca surgió como una idea de negocio, sino como una necesidad de subsistir ante el inminente cierre del Instituto de diseño Interactivo IVREA. El motivo es que al crear un producto de hardware abierto, nadie podría embargarlo.</p>
+        </section>
+        <section class="GenericSection" id="WIIAA">
+            <h3 class="marginH3">¿Para qué sirve un Arduino?</h3>
+            <p>Arduino se puede utilizar para desarrollar elementos autónomos, o bien conectarse a otros dispositivos o interactuar con otros programas, para interactuar tanto con el hardware como con el software. Sirve tanto para controlar un elemento, pongamos por ejemplo un motor que nos suba o baje una persiana basada en la luz que haya gracias a un sensor conectado al Arduino, o bien para transformar la información de una fuente, como puede ser un teclado, y convertir la información a algo que entienda, por ejemplo, un ordenador.</p>
+        </section>
+    </main>
+    <script>
+        const bdark = document.querySelector('#bdark');
+        const main = document.querySelector('main');
+        bdark.addEventListener('click', e =>{
+            main.classList.toggle('darkmode')
+            main.classList.toggle('lightmode')
+        });
+    </script>
+</body>
+</html>
